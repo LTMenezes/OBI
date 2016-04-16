@@ -1,0 +1,50 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+int main() {
+    long double input;
+   int total, temp; 
+   cin >> input;
+   total = int(input);
+   input = float(input - total);
+   input = roundf(input*100)/100;
+   cout << "NOTAS:"<<endl;
+   temp = total / 100;
+   cout <<temp << " nota(s) de R$ 100.00"<<endl;
+   total = total%100;
+   temp = total / 50;
+   cout <<temp << " nota(s) de R$ 50.00"<<endl;
+   total = total%50;
+   temp = total / 20;
+   cout <<temp << " nota(s) de R$ 20.00"<<endl;
+   total = total%20;
+   temp = total / 10;
+   cout <<temp << " nota(s) de R$ 10.00"<<endl;
+   total = total%10;
+   temp = total / 5;
+   cout <<temp << " nota(s) de R$ 5.00"<<endl;
+   total = total%5;
+   temp = total / 2;
+   cout <<temp << " nota(s) de R$ 2.00"<<endl;
+   total = total%2;
+   cout << "MOEDAS:"<<endl;
+   total = total*100 + input*100;
+   temp = total / 100;
+   cout << temp << " moeda(s) de R$ 1.00"<<endl;
+   total = total % 100;
+   temp = total / 50;
+   cout << temp << " moeda(s) de R$ 0.50"<<endl;
+   total = total % 50;
+   temp = total / 25;
+   cout << temp << " moeda(s) de R$ 0.25"<<endl;
+   total = total % 25;
+   temp = total / 10;
+   cout << temp << " moeda(s) de R$ 0.10"<<endl;
+   total = total % 10;
+   temp = total / 5;
+   cout << temp << " moeda(s) de R$ 0.05"<<endl;
+   total = total % 5;
+   temp = total / 1;
+   cout << temp << " moeda(s) de R$ 0.01"<<endl;
+   total = total % 1;
+}
